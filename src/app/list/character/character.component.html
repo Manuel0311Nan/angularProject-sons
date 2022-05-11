@@ -1,0 +1,29 @@
+<button class="button">
+  <div
+    class="character"
+    (click)="onDark()"
+    *ngIf="character"
+    [ngClass]="{ onDark: character.isActive }"
+  >
+    <img
+      class="character__img"
+      [src]="character.image"
+      [ngClass]="{opacity: character.isActive }"
+    />
+    <h3
+      class="character__name"
+      [ngClass]="font ? 'character__fontNameWhite' : 'character__fontNameBlack'"
+    >
+      {{ character.name }}
+    </h3>
+    <h4
+      class="character__faction"
+      [ngClass]="
+        font ? 'character__fontFactionWhite' : 'character__fontFactionBlack'
+      "
+    >
+      {{ character.faction }}
+    </h4>
+    <p class="character__text"></p>
+  </div>
+</button>
