@@ -8,6 +8,35 @@
     font-family: 'Xanh Mono', monospace
 }
 
+.filter {
+    display: flex;
+    justify-content: space-between;
+    &__name {
+        &__title {
+            font-size: 25px;
+            color: white;
+            font-family: 'Xanh Mono', monospace;
+        }
+        &__box {
+            width: 500px;
+            height: 50px;
+            font-size: 40px;
+        }
+    }
+    &__faction {
+        &__title {
+            font-size: 25px;
+            color: white;
+            font-family: 'Xanh Mono', monospace;
+        }
+        &__box {
+            width: 500px;
+            height: 50px;
+            font-size: 40px;
+        }
+    }
+}
+
 .character-list {
     display: flex;
     align-items: center;

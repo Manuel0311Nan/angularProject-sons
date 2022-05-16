@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { IsocialMedia } from '../../../models/socialMedia.models';
+import { IsocialMedia } from './socialMedia.models';
 import { socialMedia } from './social-media.congif';
 @Component({
   selector: 'app-footer',
