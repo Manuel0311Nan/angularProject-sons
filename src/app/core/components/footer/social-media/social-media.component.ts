@@ -1,4 +1,5 @@
-import { IsocialMedia } from './../../models/socialMedia.models';
+
+import { IsocialMedia } from '../../../../models/socialMedia.models';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({

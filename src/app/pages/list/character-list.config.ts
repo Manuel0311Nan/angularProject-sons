@@ -1,6 +1,7 @@
 
 export const characters = [
   {
+    id:1,
     name: 'Jackson Nathaniel Teller',
     image: 'https://res.cloudinary.com/dcpgr4jjn/image/upload/v1651992240/ImagenesAngularSoa/Jax_lyfys4.webp',
     alias: "Jax",
@@ -8,6 +9,7 @@ export const characters = [
     isActive: false
   },
   {
+    id:2,
     name: 'Alexander Trager',
     image: 'https://res.cloudinary.com/dcpgr4jjn/image/upload/v1651992240/ImagenesAngularSoa/Tig_whfhcr.webp',
     alias: "Tig",
@@ -15,6 +17,7 @@ export const characters = [
     isActive: false
   },
   {
+    id:3,
     name: 'Filip Telford',
     image: 'https://res.cloudinary.com/dcpgr4jjn/image/upload/v1651992240/ImagenesAngularSoa/Chibs_r9yc3q.webp',
     alias: "Chibs",
@@ -22,6 +25,7 @@ export const characters = [
     isActive: false
   },
   {
+    id:4,
     name: 'Harry  Winston',
     image: 'https://res.cloudinary.com/dcpgr4jjn/image/upload/v1651992240/ImagenesAngularSoa/Opie_hizpys.webp',
     alias: "Opie",
@@ -29,6 +33,7 @@ export const characters = [
     isActive: false
   },
   {
+    id:5,
     name: 'Marcus Álvarez',
     image: 'https://res.cloudinary.com/dcpgr4jjn/image/upload/v1651992240/ImagenesAngularSoa/Alvarez_cqpmdi.webp',
     alias: "Álvarez",
@@ -36,6 +41,7 @@ export const characters = [
     isActive: false
   },
   {
+    id:6,
     name: "James  O'Phelan" ,
     image: 'https://res.cloudinary.com/dcpgr4jjn/image/upload/v1651992240/ImagenesAngularSoa/O_phelan_sh8qzd.webp',
     alias: "Jimmy O.",
@@ -43,6 +49,7 @@ export const characters = [
     isActive: false
   },
   {
+    id:7,
     name: 'Damon Pope',
     image: 'https://res.cloudinary.com/dcpgr4jjn/image/upload/v1651993204/ImagenesAngularSoa/Pope_ak0z3a.webp',
     alias: "Pope",
@@ -50,6 +57,7 @@ export const characters = [
     isActive: false
   },
   {
+    id:8,
     name: 'Robert  Munson',
     image: 'https://res.cloudinary.com/dcpgr4jjn/image/upload/v1651993288/ImagenesAngularSoa/bobby_h6baol.webp',
     alias: "Bobby Elvis",

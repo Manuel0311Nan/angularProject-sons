@@ -16,8 +16,7 @@
             width: 500px;
             margin: 0px 24px;
             margin-bottom: 24px;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: grey;
+            font-family: 'Xanh Mono', monospace;
             cursor: pointer;
             // Display:
             display: flex;
@@ -29,6 +28,7 @@
                 height: 400px;
                 object-fit: cover;
                 border-bottom: 2px solid black;
+                border-radius: 3%;
             }
             &__faction {
                 color: white;

@@ -1,17 +1,19 @@
 .socialMedia__link {
     display: flex;
     flex-direction: column;
+    justify-content: left;
     align-items: center;
     text-decoration: none;
     &__img {
-        width: 12em;
-        margin: 5em 5em 0 5em;
-    }
-    &__imgOsc {
-        filter: grayscale(100%);
-        transition: 0.5ms;
+        width: 5em;
+        margin: 1em 5em 1em 5em;
     }
     &__name {
         color: black;
     }
+}
+
+.socialMedia__link__img:hover {
+    filter: grayscale(100%);
+    transition: 0.5s;
 }

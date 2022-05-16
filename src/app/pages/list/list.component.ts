@@ -1,6 +1,6 @@
-import { ICharacters } from './../models/characters.models';
+import { ICharacters } from '../../models/characters.models';
 import { characters } from './character-list.config';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-list',

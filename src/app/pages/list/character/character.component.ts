@@ -1,4 +1,4 @@
-import { ICharacters } from './../../models/characters.models';
+import { ICharacters } from '../../../models/characters.models';
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 @Component({
   selector: 'app-character',

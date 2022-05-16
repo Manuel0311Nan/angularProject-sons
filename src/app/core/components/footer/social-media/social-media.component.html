@@ -1,7 +1,7 @@
 <div class="socialMedia" *ngIf="socialMedia" (mouseenter)="onEnterMouse()">
-    <a [href]="socialMedia.link" class=" socialMedia__link">
-        <img class="socialMedia__link__img" [src]="socialMedia.image" [ngClass]="bgEnter ? 'socialMedia__link__imgOsc' : 'socialMedia__link__imgCol'">
-        <h1 class="socialMedia__link__name">{{ socialMedia.name }}</h1>
+    <a [href]="socialMedia?.link" class=" socialMedia__link">
+        <img class="socialMedia__link__img" [src]="socialMedia?.image">
+        <!-- <h1 class="socialMedia__link__name">{{ socialMedia?.name }}</h1> -->
     </a>
 
 </div>

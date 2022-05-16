@@ -1,26 +1,18 @@
-import { NgModule } from '@angular/core';
+import { CoreModule } from './core/core.module';
+import { CharacterModule } from '../app/pages/list/character/character.module';
+import { NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './core/components/header/header.component';
-import { ListComponent } from './list/list.component';
-import { FooterComponent } from '../app/core/components/footer/footer.component';
-import { CharacterComponent } from './list/character/character.component';
-import { SocialMediaComponent } from '../app/core/components/footer/social-media/social-media.component';
-
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    ListComponent,
-    FooterComponent,
-    CharacterComponent,
-    SocialMediaComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CharacterModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

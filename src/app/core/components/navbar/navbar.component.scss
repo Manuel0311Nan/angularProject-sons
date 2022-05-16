@@ -1,0 +1,35 @@
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 1em 0em 0em 1em;
+        &__img {
+            width: 250px;
+        }
+        &__header {
+            list-style: none;
+            display: flex;
+            justify-content: right;
+            margin-right: 2em;
+            gap: 8em;
+            &__access {
+                text-decoration: none;
+                color: white;
+                font-size: 4em;
+                font-family: 'Xanh Mono', monospace;
+            }
+        }
+    }
+
+    .menu__header__access:hover {
+        color: red;
+        font-weight: bolder;
+        font-size: 4.1em;
+        transition: 0.3ms;
+    }
