@@ -23,7 +23,7 @@ export class ListComponent{
       return character.isActive;
     }).length
   }
-   public onFilter1() {
+  public onFilter1() {
       this.filteredCharacters = this.characters.filter(character => {
         return character.alias.toLowerCase().includes(this.filterValueName.toLowerCase());
       });

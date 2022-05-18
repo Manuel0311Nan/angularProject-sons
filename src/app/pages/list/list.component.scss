@@ -1,56 +1,53 @@
-.title {
-    display: flex;
-    justify-content: center;
-    font-style: bold;
-    font-size: 5em;
-    margin: 1em 0em;
-    color: rgb(254, 254, 254);
-    font-family: 'Xanh Mono', monospace
-}
-
-.filter {
-    display: flex;
-    justify-content: space-between;
-    &__name {
-        &__title {
-            font-size: 25px;
-            color: white;
-            font-family: 'Xanh Mono', monospace;
-        }
-        &__box {
-            width: 500px;
-            height: 50px;
-            font-size: 40px;
-        }
-    }
-    &__faction {
-        &__title {
-            font-size: 25px;
-            color: white;
-            font-family: 'Xanh Mono', monospace;
-        }
-        &__box {
-            width: 500px;
-            height: 50px;
-            font-size: 40px;
-        }
-    }
-}
-
-.character-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 3em;
-}
-
-.counter {
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-    background-color: rgb(7, 7, 7);
-    font-size: 3em;
-    color: white;
-    font-family: 'Xanh Mono', monospace;
-}
+// .title {
+//     display: flex;
+//     justify-content: center;
+//     font-style: bold;
+//     font-size: 5em;
+//     margin: 1em 0em;
+//     color: rgb(254, 254, 254);
+//     font-family: 'Xanh Mono', monospace
+// }
+// .filter {
+//     display: flex;
+//     justify-content: space-between;
+//     &__name {
+//         &__title {
+//             font-size: 25px;
+//             color: white;
+//             font-family: 'Xanh Mono', monospace;
+//         }
+//         &__box {
+//             width: 500px;
+//             height: 50px;
+//             font-size: 40px;
+//         }
+//     }
+//     &__faction {
+//         &__title {
+//             font-size: 25px;
+//             color: white;
+//             font-family: 'Xanh Mono', monospace;
+//         }
+//         &__box {
+//             width: 500px;
+//             height: 50px;
+//             font-size: 40px;
+//         }
+//     }
+// }
+// .character-list {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     flex-wrap: wrap;
+//     gap: 3em;
+// }
+// .counter {
+//     display: flex;
+//     justify-content: center;
+//     max-width: 100%;
+//     background-color: rgb(7, 7, 7);
+//     font-size: 3em;
+//     color: white;
+//     font-family: 'Xanh Mono', monospace;
+// }

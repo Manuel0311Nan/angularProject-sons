@@ -1,0 +1,18 @@
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(192, 176, 149, 0.843);
+    margin: 1em auto;
+    max-width: 80%;
+    border-radius: 9%;
+    &__title {
+        font-size: 5em;
+        font-family: 'Xanh Mono', monospace;
+    }
+    &__text {
+        font-size: 2em;
+        font-family: 'Xanh Mono', monospace;
+        line-height: 1.5;
+    }
+}
