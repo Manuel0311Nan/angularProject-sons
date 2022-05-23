@@ -1,16 +1,14 @@
-import { InfoComponent } from './pages/info/info.component';
-import { MediaComponent } from './pages/media/media.component';
-import { CharacterComponent } from './pages/list/character/character.component';
-import { ListComponent } from '../app/pages/list/list.component';
+
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   { path: '', redirectTo: 'list', pathMatch: 'full' },
-  { path: 'info', component: InfoComponent},
-  { path: 'list', component: ListComponent},
-  { path: 'media', component: MediaComponent},
-  { path: 'list/:userId', component: CharacterComponent},
+  { path: 'info', loadChildren: () => import('./pages/info/info.module').then(m=>m.InfoModule)},
+  { path: 'list', loadChildren: () => import('./pages/list/character-list.module').then(m=>m.CharacterListModule)},
+  { path: 'list/:characterId', loadChildren: () => import('./pages/character-detail/character-detail.module').then(m=>m.CharacterDetailModule)},
+  { path: 'media', loadChildren: () => import('./pages/media/media.module').then(m=>m.MediaModule)},
+  // { path: 'list/:userId', component: CharacterComponent},
 ];
 
 @NgModule({

@@ -1,9 +1,12 @@
+import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
-import { CharacterModule } from '../app/pages/list/character/character.module';
+import { CharacterListModule } from './pages/list/character-list.module';
 import { NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CharacterDetailComponent } from './pages/character-detail/character-detail.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -11,8 +14,10 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CharacterModule,
-    CoreModule
+    CharacterListModule,
+    CoreModule,
+    HttpClientModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

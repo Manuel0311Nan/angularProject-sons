@@ -1,3 +1,4 @@
+import { MessageService } from '../../core/services/message/message.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InfoComponent implements OnInit {
 
-  constructor() { }
+  public message: string[]= [];
+
+  constructor(private messageService: MessageService) { }
 
   ngOnInit(): void {
+    this.message = this.messageService.getMessage();
   }
 
 }

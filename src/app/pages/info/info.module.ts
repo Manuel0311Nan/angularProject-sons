@@ -8,6 +8,7 @@ import { InfoComponent } from './info.component';
 
 @NgModule({
   declarations: [
+    InfoComponent
   ],
   imports: [
     CommonModule,

@@ -1,6 +1,7 @@
+import { ListRoutingModule } from './list-routing.module';
 import { RouterModule } from '@angular/router';
-import { ListComponent } from './../list.component';
-import { CharacterComponent } from './character.component';
+import { ListComponent } from './list.component';
+import { CharacterComponent } from './character/character.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -13,7 +14,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     FormsModule,
-    RouterModule
+    RouterModule,
+    ListRoutingModule
   ]
 })
-export class CharacterModule { }
+export class CharacterListModule { }

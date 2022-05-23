@@ -1,4 +1,3 @@
-
 export const characters = [
   {
     id:1,

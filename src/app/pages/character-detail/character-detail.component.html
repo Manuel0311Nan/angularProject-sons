@@ -1,0 +1,9 @@
+<div *ngIf="(currentCharacter$ | async) as currentCharacter">
+    <p>{{ currentCharacter.name }}</p>
+    <div class="character__style"></div>
+    <img [src]="currentCharacter.image">
+    <h3>{{ currentCharacter.name }}</h3>
+    <h3>{{ currentCharacter.faction }}</h3>
+    <h3>{{ currentCharacter.alias }}</h3>
+</div>
+<app-filter></app-filter>
