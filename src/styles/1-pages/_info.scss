@@ -1,11 +1,24 @@
+.portada {
+    &__img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        justify-content: center;
+        margin-top: 2em;
+        margin: 1em auto;
+    }
+}
+
 .info {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgba(192, 176, 149, 0.843);
     margin: 1em auto;
-    max-width: 80%;
-    border-radius: 9%;
+    padding: 1em;
+    max-width: 95%;
+    margin-bottom: 2em;
     &__title {
         font-size: 5em;
         font-family: 'Xanh Mono', monospace;

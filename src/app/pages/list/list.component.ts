@@ -13,6 +13,7 @@ export class ListComponent implements OnInit{
   public filteredCharacters: ICharacters[] = this.characters;
   public filterValueName: string = "";
   public filterValueFaction: string = "";
+
   public characterCounter: number = 0;
   characterListApi: ICharacters[] = [];
 
@@ -29,11 +30,11 @@ export class ListComponent implements OnInit{
       return character.isActive;
     }).length
   }
-  public onFilter1() {
-      this.characters = this.characters.filter(character => {
-        return character.alias.toLowerCase().includes(this.filterValueName.toLowerCase());
-      });
-    }
+  // public onFilter1() {
+  //     this.characters = this.characters.filter(character => {
+  //       return character.alias.toLowerCase().includes(this.filterValueName.toLowerCase());
+  //     });
+  //   }
       public onFilter2() {
       this.characters = this.characters.filter(character => {
         return character.faction.toLowerCase().includes(this.filterValueFaction.toLowerCase());

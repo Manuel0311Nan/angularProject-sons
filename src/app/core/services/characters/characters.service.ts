@@ -1,6 +1,6 @@
 import { environment } from './../../../../environments/environment';
 import { ICharacters } from './../../../pages/list/characters.models';
-import { ApiCharacters } from './../../../pages/list/characters.models';
+
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';

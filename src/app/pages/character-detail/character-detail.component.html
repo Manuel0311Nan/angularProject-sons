@@ -1,9 +1,14 @@
-<div *ngIf="(currentCharacter$ | async) as currentCharacter">
-    <p>{{ currentCharacter.name }}</p>
-    <div class="character__style"></div>
-    <img [src]="currentCharacter.image">
-    <h3>{{ currentCharacter.name }}</h3>
-    <h3>{{ currentCharacter.faction }}</h3>
-    <h3>{{ currentCharacter.alias }}</h3>
+<div class="detail" *ngIf="(currentCharacter$ | async) as currentCharacter">
+    <h1 class="detail__title">Detalles del personaje</h1>
+    <p class="detail__name">{{ currentCharacter.name }}</p>
+    <div class="detail__card">
+        <img class="detail__card--img" [src]="currentCharacter.image">
+        <div class="detail__card__info">
+            <h3 class="detail__card__info--1">{{ currentCharacter.faction }}</h3>
+            <h3 class="detail__card__info--1">{{ currentCharacter.name }}</h3>
+            <h3 class="detail__card__info--1">{{ currentCharacter.alias }}</h3>
+        </div>
+
+    </div>
 </div>
-<app-filter></app-filter>
+<!-- <app-filter></app-filter> -->

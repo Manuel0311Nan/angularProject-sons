@@ -1,7 +1,48 @@
-.product {
-    &__color {
-        width: 32px;
-        height: 32px;
-        border-radius: 50%;
+.detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__title {
+        color: white;
+        font-family: 'Xanh Mono', monospace;
+        font-size: 125px;
+    }
+    &__name {
+        font-family: 'Xanh Mono', monospace;
+        color: rgb(7, 7, 7);
+        font-size: 80px;
+        background-color: grey;
+    }
+    &__card {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 1em;
+        background-color: grey;
+        padding: 2em;
+        &--img {
+            width: 500px;
+            height: 600px;
+        }
+        &__info {
+            display: flex;
+            flex-direction: column;
+            color: white;
+            width: 80em;
+            &--1 {
+                display: flex;
+                justify-content: center;
+                color: white;
+                margin: 1em;
+                font-size: 80px;
+                font-family: 'Xanh Mono', monospace;
+            }
+        }
+        &--h3 {
+            font-family: 'Xanh Mono', monospace;
+            color: white
+        }
     }
 }

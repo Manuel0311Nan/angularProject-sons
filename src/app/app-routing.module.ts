@@ -7,8 +7,7 @@ const routes: Routes = [
   { path: 'info', loadChildren: () => import('./pages/info/info.module').then(m=>m.InfoModule)},
   { path: 'list', loadChildren: () => import('./pages/list/character-list.module').then(m=>m.CharacterListModule)},
   { path: 'list/:characterId', loadChildren: () => import('./pages/character-detail/character-detail.module').then(m=>m.CharacterDetailModule)},
-  { path: 'media', loadChildren: () => import('./pages/media/media.module').then(m=>m.MediaModule)},
-  // { path: 'list/:userId', component: CharacterComponent},
+  { path: 'form', loadChildren: () => import('./pages/form/form.module').then(m=>m.FormModule)},
 ];
 
 @NgModule({

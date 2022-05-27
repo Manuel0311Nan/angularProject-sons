@@ -3,13 +3,15 @@ import { FormComponent } from './components/form/form.component';
 import { FilterComponent } from './components/filter/filter.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FilterPipe } from './pipes/filter.pipe';
 
 
 
 @NgModule({
   declarations: [
     FilterComponent,
-    FormComponent
+    FormComponent,
+    FilterPipe
   ],
   imports: [
     CommonModule,
@@ -17,7 +19,8 @@ import { CommonModule } from '@angular/common';
   ],
   exports: [
     FilterComponent,
-    FormComponent
+    FormComponent,
+    FilterPipe
   ]
 })
 export class SharedModule { }
