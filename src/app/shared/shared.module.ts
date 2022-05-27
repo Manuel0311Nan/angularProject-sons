@@ -4,6 +4,7 @@ import { FilterComponent } from './components/filter/filter.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FilterPipe } from './pipes/filter.pipe';
+import { PagesPipe } from './pipes/pages.pipe';
 
 
 
@@ -11,7 +12,8 @@ import { FilterPipe } from './pipes/filter.pipe';
   declarations: [
     FilterComponent,
     FormComponent,
-    FilterPipe
+    FilterPipe,
+    PagesPipe
   ],
   imports: [
     CommonModule,
@@ -20,7 +22,8 @@ import { FilterPipe } from './pipes/filter.pipe';
   exports: [
     FilterComponent,
     FormComponent,
-    FilterPipe
+    FilterPipe,
+    PagesPipe
   ]
 })
 export class SharedModule { }

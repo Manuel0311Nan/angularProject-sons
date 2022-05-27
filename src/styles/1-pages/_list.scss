@@ -13,6 +13,7 @@
     justify-content: space-between;
     &__name {
         max-width: 33%;
+        margin: 0 0 10px 10px;
         &__title {
             font-size: 25px;
             color: white;
@@ -23,9 +24,22 @@
             height: 50px;
             font-size: 40px;
         }
+        &__button {
+            position: absolute;
+            width: 9em;
+            height: 3em;
+            background-color: black;
+            color: white;
+            font-size: larger;
+            border: 1px black solid;
+            cursor: pointer;
+            border-radius: 10%;
+            font-family: 'Xanh Mono', monospace;
+        }
     }
     &__faction {
         max-width: 33%;
+        margin: 0 10px 10px 0;
         &__title {
             font-size: 25px;
             color: white;
@@ -55,4 +69,18 @@
     font-size: 3em;
     color: white;
     font-family: 'Xanh Mono', monospace;
+}
+
+.page {
+    &__title {
+        color: white;
+        font-size: 2em;
+        font-family: 'Xanh Mono', monospace;
+    }
+    &__box {
+        font-size: 2em;
+        height: 2.1em;
+        text-align: center;
+        font-family: 'Xanh Mono', monospace;
+    }
 }

@@ -10,9 +10,9 @@ import { Component, OnInit } from '@angular/core';
 export class ListComponent implements OnInit{
 
   public characters: ICharacters[]= characters as ICharacters[];
-  public filteredCharacters: ICharacters[] = this.characters;
   public filterValueName: string = "";
   public filterValueFaction: string = "";
+  public page: number = 0;
 
   public characterCounter: number = 0;
   characterListApi: ICharacters[] = [];
