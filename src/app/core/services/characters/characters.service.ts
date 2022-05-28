@@ -9,6 +9,8 @@ environment
 })
 export class CharactersService {
 
+  private API_URL= environment.apiUrl;
+
   constructor(private httpClient: HttpClient) {}
 /*
 *Introducir la ruta de nuestra api donde pone "ruta", y mediante el observable establecemos lo que va a devolver
@@ -31,12 +33,12 @@ observable = algo que podemos escuchar.
     );
   }
 
-  // public editProduct(idProduct: string, body: IProduct): Observable<IProduct> {
-  //   return this.httpClient.put<IProduct>(
-  //     `${environment.apiUrl}products/${idProduct}`,
-  //     body
-  //   );
-  // }
+  public editCharacter(idCharacter: number, body: ICharacters): Observable<ICharacters> {
+    return this.httpClient.put<ICharacters>(
+      `${environment.apiUrl}character/${idCharacter}`,
+      body
+    );
+  }
 
   public deleteCharacter(idCharacter: string): Observable<ICharacters> {
     return this.httpClient.delete<ICharacters>( `${environment.apiUrl}character/${idCharacter}`);

@@ -1,7 +1,5 @@
-import { ActivatedRoute } from '@angular/router';
 import { ICharacters } from '../characters.models';
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { CharactersService } from 'src/app/core/services/characters/characters.service';
 import { Observable } from 'rxjs';
 @Component({
   selector: 'app-character',
@@ -14,8 +12,6 @@ export class CharacterComponent {
   public currentCharacter$?: Observable<ICharacters>;
 
   constructor(
-    private characterService: CharactersService,
-    private activatedRoute: ActivatedRoute
   ) {}
 
   ngOnInit(): void {

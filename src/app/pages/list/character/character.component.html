@@ -25,5 +25,5 @@
     <p class="character__text"></p>
 </div>
 </button>
-    <button class="filter__name__button" [routerLink]="['/detail', character]">Conócele</button>
+    <button class="filter__name__button" *ngIf="character" [routerLink]="['/list', character.id]">Conócele</button>
 </div>

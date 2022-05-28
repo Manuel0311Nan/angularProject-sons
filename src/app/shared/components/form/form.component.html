@@ -1,1 +1,23 @@
-<p>form works!</p>
+<form *ngIf="characterForm"
+[formGroup]="characterForm"
+(submit)="saveCharacter()">
+<div>
+  <input class="form__input" placeholder="name" formControlName="name">
+  <p class="error"
+  *ngIf="!characterForm.get('name')?.valid && characterForm.get('name')?.dirty">
+Este campo es necesario</p>
+  <input class="form__input" placeholder="image" formControlName="image">
+  <p class="error"
+  *ngIf="!characterForm.get('
+  image')?.valid && characterForm.get('image')?.dirty">
+Este campo es necesario</p>
+  <input class="form__input" placeholder="alias" formControlName="alias">
+  <p class="error"
+  *ngIf="!characterForm.get('alias')?.valid && characterForm.get('alias')?.dirty">
+Este campo es necesario</p>
+<input class="form__input" placeholder="faction" formControlName="faction">
+<p class="error"
+*ngIf="!characterForm.get('faction')?.valid && characterForm.get('faction')?.dirty">
+Este campo es necesario</p>
+</div>
+</form>
