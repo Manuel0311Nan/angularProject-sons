@@ -1,6 +1,5 @@
 import { environment } from './../../../../environments/environment';
 import { ICharacters } from './../../../pages/list/characters.models';
-
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
@@ -25,7 +24,7 @@ observable = algo que podemos escuchar.
     return this.httpClient.get<ICharacters>(`${environment.apiUrl}/${characterId}`);
   }
 
-  public addProduct(body: ICharacters): Observable<ICharacters> {
+  public addCharacter(body: ICharacters): Observable<ICharacters> {
     return this.httpClient.post<ICharacters>(
       `${environment.apiUrl}characters/create`,
       body

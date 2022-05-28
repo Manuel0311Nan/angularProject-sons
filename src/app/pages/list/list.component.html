@@ -3,7 +3,6 @@
     <div class="filter__name">
         <h3 class="filter__name__title">Busca un personaje (alias)</h3>
         <input class="filter__name__box" [(ngModel)]="filterValueName" />
-        <button class="filter__name__button">Conócele</button>
     </div>
     <div class="filter__faction">
         <h3 class="filter__faction__title">Busca personajes de una facción</h3>
@@ -15,9 +14,11 @@
     <p class="counter__text">Dead Characters: {{ characterCounter }}</p>
 </div>
 <div class="character-list">
-    <app-character class="character" *ngFor="let character of characters | filter: filterValueName | pages: page" (upDate)="selection()" [character]="character"></app-character>
+    <app-character class="character" *ngFor="let character of characters | filter: filterValueName | pages: page" (upDate)="selection()" [character]="character">
+    </app-character>
+
 </div>
 <div class="page">
-    <h3 class="page__title">Página</h3>
+    <h3 class="page__title">Pág.</h3>
     <input class="page__box" type="number" [(ngModel)]="page">
 </div>

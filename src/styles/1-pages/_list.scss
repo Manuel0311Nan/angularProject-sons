@@ -72,12 +72,17 @@
 }
 
 .page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
     &__title {
         color: white;
         font-size: 2em;
         font-family: 'Xanh Mono', monospace;
     }
     &__box {
+        width: 3em;
         font-size: 2em;
         height: 2.1em;
         text-align: center;

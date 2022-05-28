@@ -20,11 +20,12 @@
         align-items: center;
         justify-content: flex-start;
         margin-top: 1em;
-        background-color: grey;
+        background-color: rgba(128, 128, 128, 0.367);
         padding: 2em;
         &--img {
             width: 500px;
             height: 600px;
+            border-radius: 15%;
         }
         &__info {
             display: flex;

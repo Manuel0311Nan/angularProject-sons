@@ -1,4 +1,5 @@
-<button class="button">
+<div class="buttons">
+    <button class="button">
   <div
     class="character"
     (click)="onDark()"
@@ -22,5 +23,7 @@
       {{ character.faction }}
     </h4>
     <p class="character__text"></p>
-  </div>
+</div>
 </button>
+    <button class="filter__name__button" [routerLink]="['/detail', character]">Conócele</button>
+</div>
