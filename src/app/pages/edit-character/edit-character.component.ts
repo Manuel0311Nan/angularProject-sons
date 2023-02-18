@@ -1,4 +1,3 @@
-import { Observable, switchMap } from 'rxjs';
 import { ICharacters } from './../list/characters.models';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';

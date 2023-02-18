@@ -24,18 +24,7 @@
             height: 50px;
             font-size: 40px;
         }
-        &__button {
-            position: absolute;
-            width: 9em;
-            height: 3em;
-            background-color: black;
-            color: white;
-            font-size: larger;
-            border: 1px black solid;
-            cursor: pointer;
-            border-radius: 10%;
-            font-family: 'Xanh Mono', monospace;
-        }
+
     }
     &__faction {
         max-width: 33%;
@@ -55,8 +44,6 @@
 
 .character-list {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
     gap: 3em;
 }

@@ -6,7 +6,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FormComponent } from './shared/components/form/form.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,8 +17,7 @@ import { FormComponent } from './shared/components/form/form.component';
     CharacterListModule,
     CoreModule,
     HttpClientModule,
-    SharedModule,
-    CharacterListModule
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

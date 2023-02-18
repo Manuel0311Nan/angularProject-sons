@@ -1,3 +1,4 @@
+//import { characters } from './../../../pages/list/character-list.config';
 
 import { ICharacters } from './../../../pages/list/characters.models';
 import { Component, Input, OnInit } from '@angular/core';
@@ -20,6 +21,7 @@ export class FormComponent implements OnInit {
   @Input() public editMode: boolean = true;
 
   public characterForm?: FormGroup;
+
   constructor(
     private CharactersService: CharactersService,
     private router: Router,
@@ -48,8 +50,8 @@ export class FormComponent implements OnInit {
       this.editMode && this.character
         ? this.CharactersService.editCharacter(this.character.id, formValue)
         : this.CharactersService.addCharacter(formValue);
-    characterAdd$.subscribe(() => {
-      this.router.navigate(['list']);
+    characterAdd$.subscribe((_character) => {
+      this.router.navigate(['/list']);
     });
   }
 }

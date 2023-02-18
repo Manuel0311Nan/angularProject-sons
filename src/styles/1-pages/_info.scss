@@ -1,9 +1,9 @@
+.portada{
+  margin-top: 2em;
+}
 .portada {
     &__img {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 90%;
+        width: 100%;
         justify-content: center;
         margin-top: 2em;
         margin: 1em auto;
@@ -20,11 +20,11 @@
     max-width: 95%;
     margin-bottom: 2em;
     &__title {
-        font-size: 5em;
+        font-size: 3em;
         font-family: 'Xanh Mono', monospace;
     }
     &__text {
-        font-size: 2em;
+        font-size: 0.8em;
         font-family: 'Xanh Mono', monospace;
         line-height: 1.5;
     }

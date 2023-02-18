@@ -1,4 +1,4 @@
-import { characters } from './../../pages/list/character-list.config';
+//import { characters } from './../../pages/list/character-list.config';
 import { ICharacters } from './../../pages/list/characters.models';
 import { Pipe, PipeTransform } from '@angular/core';
 

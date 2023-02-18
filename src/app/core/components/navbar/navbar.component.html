@@ -1,8 +1,24 @@
-<nav class="menu">
+<!-- <nav class="menu">
     <a routerLink="/info" [ngClass]="{'link--active': selectedRoute === 'info'}"><img class="menu__img" src="../../../assets/images/samcrow.jpg" alt="logo samcrow"></a>
     <ul class="menu__header">
         <li><a class="menu__header__access" routerLink="/info" [ngClass]="{'menu__header__access--active': selectedRoute === 'info'}"> Samcro </a></li>
         <li><a class="menu__header__access" routerLink="/list" [ngClass]="{'menu__header__access--active': selectedRoute === 'list'}"> Characters </a></li>
         <li><a class="menu__header__access" routerLink="/create-character" [ngClass]="{'menu__header__access--active': selectedRoute === 'create-character'}"> New Character </a></li>
     </ul>
+</nav> -->
+<nav class="navbar navbar-expand-lg menu">
+  <div class="container-fluid ">
+    <a class="navbar-brand" routerLink="/info" [ngClass]="{'link--active': selectedRoute === 'info'}"><img class="menu__img" src="../../../assets/images/samcrow.jpg" alt="logo samcrow"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">Hola</span>
+    </button>
+    <div class="collapse navbar-collapse  " id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+        <li class="nav-item m-4"><a class="menu__header__access" routerLink="/info" [ngClass]="{'menu__header__access--active': selectedRoute === 'info'}"> Samcro </a></li>
+        <li class="nav-item m-4"><a class="menu__header__access" routerLink="/list" [ngClass]="{'menu__header__access--active': selectedRoute === 'list'}"> Characters </a></li>
+        <li class="nav-item m-4"><a class="menu__header__access" routerLink="/create-character" [ngClass]="{'menu__header__access--active': selectedRoute === 'create-character'}"> New Character </a></li>
+      </ul>
+    </div>
+  </div>
+
 </nav>

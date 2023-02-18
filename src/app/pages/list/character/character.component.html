@@ -1,29 +1,33 @@
 <div class="buttons">
-    <button class="button">
-  <div
-    class="character"
-    (click)="onDark()"
-    *ngIf="character"
-    [ngClass]="{ onDark: character.isActive }"
-  >
-    <img
-      class="character__img"
-      [src]="character.image"
-      [ngClass]="{opacity: character.isActive }"
-    />
-    <h3
-    class="character__alias"
-  >
-<!-- Ejemplo de pipe donde alias se muestra al usuario en mayusculas ( | uppercase) -->
-    {{ character.alias | uppercase }}
-  </h3>
-    <h4
-      class="character__faction"
+    <div
+      class="character__card"
+      (click)="onDark()"
+      *ngIf="character"
+      [ngClass]="{ onDark: character.isActive }"
     >
-      {{ character.faction }}
-    </h4>
-    <p class="character__text"></p>
-</div>
-</button>
-    <button class="filter__name__button" *ngIf="character" [routerLink]="['/list', character.id]">Conócele</button>
+    <button class="button">
+      <img
+        class="character__card__img"
+        [src]="character.image"
+        [ngClass]="{ opacity: character.isActive }"
+      />
+    </button>
+      <h3 class="character__card__alias">
+        <!-- Ejemplo de pipe donde alias se muestra al usuario en mayusculas ( | uppercase) -->
+        {{ character.alias | uppercase }}
+      </h3>
+      <h4 class="character__card__faction">
+        {{ character.faction }}
+      </h4>
+      <p class="character__card__text"></p>
+      <button
+      class="character__card__button"
+      *ngIf="character"
+      [routerLink]="['/list', character.id]"
+    >
+      Conócele
+    </button>
+    </div>
+
+
 </div>

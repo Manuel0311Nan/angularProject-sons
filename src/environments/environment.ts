@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  apiUrl: "https://6286761f96bccbf32d75780e.mockapi.io/samcro/v2/Character"
+  // apiUrl: "https://6286761f96bccbf32d75780e.mockapi.io/samcro/v2/Character"
+  apiUrl: 'https://sonsproject-default-rtdb.europe-west1.firebasedatabase.app/'
 };
 
 /*
